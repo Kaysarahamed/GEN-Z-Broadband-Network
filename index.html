@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GEN-Z Broadband Network | Fiber Internet</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#f5f7fb;
+color:#334155;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+:root{
+--primary:#0a4da2;
+--accent:#00d2ff;
+}
+
+header{
+background:#fff;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+header .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px 0;
+}
+
+.logo img{
+height:65px;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+font-weight:600;
+color:#475569;
+}
+
+nav a:hover{
+color:var(--primary);
+}
+
+.hero{
+
+padding:170px 20px;
+text-align:center;
+color:#fff;
+
+background:
+linear-gradient(rgba(10,77,162,.85),rgba(0,210,255,.7)),
+url("https://images.unsplash.com/photo-1535223289827-42f1e9919769") center/cover;
+
+animation:zoom 20s infinite alternate;
+
+}
+
+@keyframes zoom{
+
+0%{background-size:100%}
+100%{background-size:120%}
+
+}
+
+.hero h1{
+font-size:55px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:35px;
+}
+
+.btn{
+background:#fff;
+color:var(--primary);
+padding:15px 40px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+}
+
+section{
+padding:100px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:38px;
+}
+
+.packages{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:#fff;
+padding:40px 30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.speed{
+background:#f1f5f9;
+display:inline-block;
+padding:8px 22px;
+border-radius:30px;
+font-weight:800;
+font-size:26px;
+margin:15px 0;
+color:#0a4da2;
+}
+
+.price{
+font-size:24px;
+font-weight:600;
+color:#64748b;
+}
+
+.price span{
+font-size:15px;
+color:#94a3b8;
+}
+
+ul{
+list-style:none;
+margin:25px 0;
+text-align:left;
+}
+
+ul li{
+margin-bottom:10px;
+}
+
+ul li::before{
+content:"✔ ";
+color:var(--accent);
+}
+
+.order{
+display:block;
+background:var(--primary);
+color:#fff;
+padding:12px;
+border-radius:10px;
+text-decoration:none;
+font-weight:700;
+}
+
+.coverage{
+background:#eef6ff;
+text-align:center;
+}
+
+.form{
+
+max-width:500px;
+margin:auto;
+
+}
+
+.form input{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border-radius:8px;
+border:1px solid #ddd;
+}
+
+.form button{
+
+width:100%;
+padding:12px;
+border:none;
+background:var(--primary);
+color:#fff;
+font-weight:700;
+border-radius:8px;
+
+}
+
+.map iframe{
+width:100%;
+height:350px;
+border:none;
+}
+
+footer{
+background:#0f172a;
+color:#94a3b8;
+text-align:center;
+padding:60px 0;
+}
+
+.whatsapp{
+
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:14px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+
+}
+
+.call{
+
+position:fixed;
+bottom:80px;
+right:20px;
+background:#0a4da2;
+color:#fff;
+padding:14px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+
+}
+
+.speedtest{
+
+position:fixed;
+bottom:140px;
+right:20px;
+background:#ff6b00;
+color:#fff;
+padding:14px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+
+}
+
+@media(max-width:768px){
+
+nav{
+display:none;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<div class="logo">
+<img src="YOUR_LOGO_LINK_HERE">
+</div>
+
+<nav>
+
+<a href="#plans">Packages</a>
+<a href="#coverage">Coverage</a>
+<a href="#connection">New Connection</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>Super Fast Fiber Internet</h1>
+
+<p>Reliable High-Speed Broadband in Bhaluka</p>
+
+<a href="#plans" class="btn">View Packages</a>
+
+</section>
+
+<section id="plans">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Internet Packages</h2>
+</div>
+
+<div class="packages">
+
+<div class="card">
+<h3>Vnus</h3>
+<div class="speed">12 Mbps</div>
+<div class="price">৳500 <span>/month</span></div>
+<ul>
+<li>Unlimited Internet</li>
+<li>Social Media Browsing</li>
+<li>Stable Connection</li>
+</ul>
+<a href="https://wa.me/8801918478035" class="order">Order Now</a>
+</div>
+
+<div class="card">
+<h3>Mars</h3>
+<div class="speed">20 Mbps</div>
+<div class="price">৳800 <span>/month</span></div>
+<ul>
+<li>HD Streaming</li>
+<li>Online Gaming</li>
+<li>Fast Download</li>
+</ul>
+<a href="https://wa.me/8801918478035" class="order">Order Now</a>
+</div>
+
+<div class="card">
+<h3>Mercury</h3>
+<div class="speed">30 Mbps</div>
+<div class="price">৳1200 <span>/month</span></div>
+<ul>
+<li>4K Streaming</li>
+<li>Smart Home</li>
+<li>Low Latency</li>
+</ul>
+<a href="https://wa.me/8801918478035" class="order">Order Now</a>
+</div>
+
+<div class="card">
+<h3>Jupiter</h3>
+<div class="speed">50 Mbps</div>
+<div class="price">৳2000 <span>/month</span></div>
+<ul>
+<li>Ultra Fast Internet</li>
+<li>Multiple Devices</li>
+<li>Best for Business</li>
+</ul>
+<a href="https://wa.me/8801918478035" class="order">Order Now</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="coverage" class="coverage">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Coverage Area</h2>
+</div>
+
+<p>Our Fiber Internet is Available In:</p>
+
+<h3>Rangcapra • Bhaluka • Mymensingh</h3>
+
+</div>
+
+</section>
+
+<section id="connection">
+
+<div class="container">
+
+<div class="section-title">
+<h2>New Connection</h2>
+</div>
+
+<div class="form">
+
+<input type="text" placeholder="Your Name">
+<input type="text" placeholder="Phone Number">
+<input type="text" placeholder="Address">
+
+<button>Submit Request</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="map">
+
+<iframe src="https://maps.google.com/maps?q=bhaluka&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+</section>
+
+<footer id="contact">
+
+<p>📍 Rangcapra, Bhaluka, Mymensingh</p>
+<p>📞 01918-478035</p>
+<p>© 2026 GEN-Z Broadband Network</p>
+
+</footer>
+
+<a class="speedtest" href="https://fast.com" target="_blank">Speed Test</a>
+
+<a class="call" href="tel:01918478035">Call</a>
+
+<a class="whatsapp" href="https://wa.me/8801918478035">WhatsApp</a>
+
+</body>
+
+</html>

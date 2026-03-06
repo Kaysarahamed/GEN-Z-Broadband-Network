@@ -45,11 +45,12 @@
         .btn { background: #fff; color: var(--primary); padding: 15px 45px; border-radius: 50px; text-decoration: none; font-weight: 700; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         .btn:hover { background: var(--primary); color: #fff; }
 
-        /* Plans */
+        /* Sections */
         section { padding: 100px 0; }
         .section-title { text-align: center; margin-bottom: 60px; }
         .section-title h2 { font-size: 38px; color: #1e293b; }
 
+        /* Plans */
         .packages { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; }
         .card { background: #fff; padding: 40px 30px; border-radius: 20px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,.08); transition: .3s; border-bottom: 4px solid transparent; }
         .card:hover { transform: translateY(-10px); border-bottom-color: var(--accent); }
@@ -64,16 +65,13 @@
 
         /* Coverage */
         .coverage { background: #eef6ff; text-align: center; }
-        .coverage h3 { color: var(--primary); margin-top: 15px; font-size: 24px; }
+        .coverage h3 { color: var(--primary); margin-top: 15px; font-size: 20px; font-weight: 700; line-height: 1.8; }
 
         /* Form */
         .form { max-width: 500px; margin: auto; background: #fff; padding: 30px; border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
         .form input { width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #ddd; font-size: 15px; }
         .form button { width: 100%; padding: 15px; border: none; background: var(--primary); color: #fff; font-weight: 700; border-radius: 8px; cursor: pointer; transition: 0.3s; }
         .form button:hover { background: #083d81; }
-
-        /* Map */
-        .map iframe { width: 100%; height: 350px; border: none; filter: grayscale(20%); }
 
         /* Footer */
         footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 60px 0; }
@@ -113,7 +111,7 @@
     <section class="hero">
         <div class="container">
             <h1>Super-Fast Fiber Internet</h1>
-            <p>Experience Galactic Speed with <strong>GEN-Z Broadband</strong> in Bhaluka</p>
+            <p>Experience Galactic Speed with <strong>GEN-Z Broadband</strong></p>
             <a href="#plans" class="btn">View Packages</a>
         </div>
     </section>
@@ -175,10 +173,11 @@
     <section id="coverage" class="coverage">
         <div class="container">
             <div class="section-title">
-                <h2>Coverage Area</h2>
+                <h2>Our Coverage Areas</h2>
             </div>
-            <p><strong>GEN-Z Broadband</strong> Network is available in:</p>
-            <h3>Rangcapra • Bhaluka • Mymensingh</h3>
+            <p><strong>GEN-Z Broadband</strong> Network is currently available in:</p>
+            <h3>Rangcapra • Muqtir Amgas • Nandibari • Nishaiganj</h3>
+            <p style="margin-top: 10px; color: #64748b;">Area: Bhaluka, Mymensingh</p>
         </div>
     </section>
 
@@ -190,7 +189,7 @@
             <div class="form">
                 <input type="text" placeholder="Full Name">
                 <input type="text" placeholder="Phone Number">
-                <input type="text" placeholder="Detailed Address">
+                <input type="text" placeholder="Detailed Address (Village/Area)">
                 <button type="submit">Submit Request</button>
             </div>
         </div>
